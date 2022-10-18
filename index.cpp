@@ -3,5 +3,10 @@
 #include <cmath>
 
 int sumString(const std::string& str) {
-	return 0;
+	int num = 0;
+
+	for (char i: str) {
+		num += i - '0';
+	}
+	return num;
 }
